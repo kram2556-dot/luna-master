@@ -25,5 +25,24 @@
   const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('nav');menu.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
   const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
   const range=document.querySelector('.ba-card input'),after=document.querySelector('.after-img');range.addEventListener('input',e=>after.style.width=`${e.target.value}%`);
+  const bookingForm=document.querySelector('#booking-form');
+  const bookingStatus=bookingForm?.querySelector('.form-status');
+  bookingForm?.addEventListener('submit',event=>{
+    event.preventDefault();
+    const data=new FormData(bookingForm);
+    const reference=data.get('reference');
+    const message=[
+      'مرحباً Luna Beauty Studio، أرغب في حجز موعد.',
+      `الاسم: ${data.get('name')}`,
+      `واتساب: ${data.get('phone')}`,
+      `الخدمة: ${data.get('service')}`,
+      `المناسبة والتاريخ: ${data.get('date')}`,
+      `المكان: ${data.get('location')||'لم يحدد بعد'}`,
+      `الرسالة: ${data.get('message')||'لا توجد رسالة إضافية'}`,
+      reference?.name ? `صورة مرجعية مرفقة: ${reference.name} (يرجى إرسالها في المحادثة)` : 'لا توجد صورة مرجعية'
+    ].join('\n');
+    bookingStatus.textContent=reference?.name ? `تم اختيار الصورة: ${reference.name} — أرسليها بعد فتح واتساب.` : 'جاري فتح واتساب برسالة الحجز...';
+    window.open(`https://wa.me/201000000000?text=${encodeURIComponent(message)}`,'_blank','noopener,noreferrer');
+  });
   document.querySelector('#year').textContent=new Date().getFullYear();
 })();
