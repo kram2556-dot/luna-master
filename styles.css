@@ -37,3 +37,29 @@ body{font-family:'Tajawal',sans-serif;color:var(--ink)}
   .hero{min-height:auto;padding-block:64px 48px;gap:36px}
   .hero-image{height:62vh}
 }
+
+
+/* Premium calm typography, desktop balance, and isolated mobile overlay */
+body{font-family:'Tajawal',sans-serif;font-weight:400;color:#51433f}
+.hero h1,h2,.section-head h2,.contact-copy h2{font-family:'Tajawal',sans-serif;font-weight:400;color:#51433f;letter-spacing:0}
+.hero h1{font-size:clamp(40px,5vw,64px);line-height:1.28!important}
+.hero h1 span{line-height:1.28!important;margin-bottom:8px!important}
+.hero .lead{font-size:16px!important;line-height:1.9!important;color:#735f58;max-width:460px}
+
+@media(min-width:761px){
+  .site-header{position:fixed;height:72px;padding:0 max(24px,calc((100% - var(--max))/2));backdrop-filter:blur(12px)}
+  .hero{min-height:calc(100svh - 72px);height:auto;padding:92px 0 44px;align-items:center;gap:7%}
+  .hero-copy,.hero-image-wrap{align-self:center}
+  .hero-image{height:min(570px,calc(100svh - 170px));max-height:570px}
+}
+
+@media(max-width:760px){
+  .site-header{position:fixed;top:0;backdrop-filter:none!important;isolation:isolate}
+  .main-nav,.main-nav.open{position:fixed!important;top:0!important;right:0!important;bottom:0!important;left:0!important;width:100vw!important;height:100dvh!important;min-height:100vh!important;z-index:99999!important;display:flex!important;background:#fff!important;opacity:0;visibility:hidden;pointer-events:none;overflow-y:auto}
+  .main-nav.open{opacity:1;visibility:visible;pointer-events:auto}
+  .main-nav a{font-family:'Tajawal',sans-serif;font-size:22px;font-weight:400;line-height:1.4;color:#51433f}
+  .close-menu{position:absolute!important;top:24px!important;right:24px!important;z-index:100000!important}
+  .hero{padding-top:104px;min-height:auto}
+  .hero h1{font-size:clamp(38px,11vw,50px);line-height:1.35!important}
+  .hero h1 span{line-height:1.35!important}
+}
