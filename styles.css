@@ -19,3 +19,21 @@
   .close-menu{position:absolute;display:grid;place-items:center;top:24px;right:24px;width:44px;height:44px;background:#F5E6D3;border-radius:50%;border:none;font-size:22px;color:#5b4b47;cursor:pointer;line-height:1}
   .footer-social{justify-content:center}
 }
+
+
+/* Styling-only responsive corrections — no content or behavior changes */
+:root{--ink:#4b3d39;--muted:#735f58}
+body{font-family:'Tajawal',sans-serif;color:var(--ink)}
+.hero{min-height:calc(100vh - 72px);padding-block:32px 48px;align-items:center}
+.hero-copy,.hero-image-wrap{align-self:center}
+.hero-image{height:min(650px,calc(100vh - 160px))}
+.hero h1,h2{color:var(--ink)}
+.lead,.section-head>p,.about-copy>p:not(.eyebrow),.contact-copy>p:not(.eyebrow){color:var(--muted)}
+@media(max-width:760px){
+  .main-nav{z-index:99999!important;background-color:#ffffff!important;gap:32px;padding:96px 24px 40px}
+  .main-nav.open{z-index:99999!important;background-color:#ffffff!important}
+  .main-nav a{margin:0;line-height:1.2}
+  .close-menu{z-index:100000;top:24px;right:24px}
+  .hero{min-height:auto;padding-block:64px 48px;gap:36px}
+  .hero-image{height:62vh}
+}
