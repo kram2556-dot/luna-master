@@ -20,10 +20,13 @@
   range.addEventListener('input', (event) => updateComparison(event.target.value));
   updateComparison(range.value);
 
-  const menu = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.main-nav');
-  menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
-  nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); }));
+  const menu = document.querySelector('#hamburger');
+  const nav = document.querySelector('#mobile-menu');
+  const closeMenu = document.querySelector('#close-menu');
+  const setMenu = (open) => { nav.classList.toggle('open', open); menu.setAttribute('aria-expanded', String(open)); document.body.style.overflow = open ? 'hidden' : ''; };
+  menu.addEventListener('click', () => setMenu(true));
+  closeMenu.addEventListener('click', () => setMenu(false));
+  nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
 
   const bookingForm = document.querySelector('#booking-form');
   bookingForm.addEventListener('submit', (event) => {
