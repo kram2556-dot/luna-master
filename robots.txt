@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://youssef-el-sayed-portfolio.pages.dev/sitemap.xml
