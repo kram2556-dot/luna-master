@@ -1,11 +1,11 @@
 (() => {
   const galleryUrls = [
-    ['https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=900','Bridal glow / عروس'],
-    ['https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=900','Soft glam / بشرة مضيئة'],
-    ['https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=900','Defined eyes / عيون محددة'],
-    ['https://images.unsplash.com/photo-1484186139897-d5fc6b908812?q=80&w=900','Editorial / تصوير'],
-    ['https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=900','Statement look / لوك جريء'],
-    ['https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=900','The details / التفاصيل']
+    ['./assets/bridal-portrait.webp','Bridal glow / عروس'],
+    ['./assets/glam-face.webp','Soft glam / بشرة مضيئة'],
+    ['./assets/makeup-application.webp','Defined eyes / عيون محددة'],
+    ['./assets/bridal-side.webp','Editorial / تصوير'],
+    ['./assets/editorial-eyes.webp','Statement look / لوك جريء'],
+    ['./assets/lash-detail.webp','The details / التفاصيل']
   ];
   const instaUrls = [galleryUrls[0][0], galleryUrls[1][0], galleryUrls[2][0], galleryUrls[3][0], galleryUrls[4][0], galleryUrls[5][0]];
   const gallery = document.querySelector('#gallery');
