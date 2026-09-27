@@ -70,3 +70,31 @@ body{font-family:'Tajawal',sans-serif;font-weight:400;color:#51433f}
   .hero-image{height:500px;max-height:500px}
   .hero-copy{padding-inline-start:2%}
 }
+
+/* LUNA MASTER LOCKED RULES — keep these visual constraints intact. */
+:root{--bg:#FFFBF7;--ink:#51433f;--muted:#735f58;--rose:#D4A5A5;--rose-dark:#D4A5A5}
+.hero{grid-template-columns:50% 45%;gap:5%;}
+.hero h1,h2,.section-head h2,.contact-copy h2{font-weight:800;font-size:42px;}
+.hero-image,.gallery figure,.about-image img,.comparison{border-radius:200px 200px 0 0;}
+.gallery figure:nth-child(even){border-radius:200px 200px 0 0;}
+.main-nav{background:#FFFBF7;}
+.close-menu{width:48px;height:48px;border-radius:50%;}
+.footer-social a{width:48px;height:48px;border-radius:50%;background:var(--rose);}
+@media(max-width:760px){
+  .site-header{position:sticky;top:0;}
+  .main-nav,.main-nav.open{background:#FFFBF7!important;}
+  .close-menu{width:48px;height:48px;border-radius:50%;}
+  .hero{width:100%;margin:0;padding:24px 16px;gap:24px;min-height:auto;display:flex;flex-direction:column-reverse;}
+  .hero h1,h2,.section-head h2,.contact-copy h2{font-size:42px;font-weight:800;}
+  .hero-image{height:62vh;border-radius:200px 200px 0 0;}
+  .section{width:calc(100% - 32px);}
+  .gallery figure,.gallery figure:nth-child(even){border-radius:200px 200px 0 0;}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important;}}
+@media(max-width:760px){
+  .site-header{position:sticky;}
+  .site-header>.brand{position:absolute;left:50%;transform:translateX(-50%);}
+  .header-actions{position:absolute;inset-inline-end:16px;}
+  .menu-toggle{display:block;}
+}
+@media(max-width:760px){.header-actions{right:16px;left:auto;inset-inline-end:auto;}}
