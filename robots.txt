@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luna-beauty-studio-portfolio.pages.dev/sitemap.xml
+Sitemap: https://luna-makeup-artist.pages.dev/sitemap.xml
