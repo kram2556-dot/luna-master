@@ -1,75 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Luna Beauty Studio — ميكب أرتيست للعرائس والمناسبات والجلسات التصويرية في القاهرة. إطلالات ناعمة مصممة حول ملامحك." />
-  <meta name="keywords" content="ميكب أرتيست القاهرة, ميكب عرايس, ميكب مناسبات, bridal makeup Cairo, makeup artist Egypt" />
-  <meta name="author" content="Luna Beauty Studio" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#FFFBF7" />
-  <link rel="canonical" href="https://luna-makeup-artist.pages.dev/" />
-  <meta property="og:locale" content="ar_EG" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Luna Beauty Studio | ميكب أرتيست للعرائس والمناسبات" />
-  <meta property="og:description" content="إطلالات عروس ومناسبات ناعمة في القاهرة، مصممة حول ملامحك أنتِ." />
-  <meta property="og:url" content="https://luna-makeup-artist.pages.dev/" />
-  <meta property="og:image" content="https://luna-makeup-artist.pages.dev/assets/bridal-portrait.webp" />
-  <meta property="og:image:alt" content="إطلالة ميكب عروس من Luna Beauty Studio" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Luna Beauty Studio | Makeup Artist Cairo" />
-  <meta name="twitter:description" content="Bridal, soft glam and editorial makeup in Cairo." />
-  <meta name="twitter:image" content="https://luna-makeup-artist.pages.dev/assets/bridal-portrait.webp" />
-  <title>Luna Beauty Studio | ميكب أرتيست عرايس ومناسبات في القاهرة</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Luna Beauty Studio","description":"ميكب أرتيست للعرائس والمناسبات والجلسات التصويرية في القاهرة.","url":"https://luna-makeup-artist.pages.dev/","telephone":"+201000000000","email":"hello@lunabeauty.studio","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"sameAs":["https://instagram.com/lunabeauty","https://facebook.com/lunabeauty","https://tiktok.com/@lunabeauty","https://snapchat.com/add/lunabeauty"],"priceRange":"$$"}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link rel="stylesheet" href="./styles.css" />
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مكتب ياسر العدوي للمحاماة والاستشارات القانونية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1B32;--navy-light:#122543;--gold:#C5A46D;--gold-light:#E8D5B5;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:var(--navy);color:var(--white);overflow-x:hidden}
+.navbar{position:fixed;top:0;width:100%;z-index:1000;background:rgba(11,27,50,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(197,164,109,.2);padding:15px 5%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;color:var(--gold);font-size:20px}
+.nav-links{list-style:none;display:flex;gap:25px}
+.nav-links a{color:#fff;text-decoration:none;font-size:14px;transition:.3s}
+.nav-links a:hover{color:var(--gold)}
+.lang-btn{border:1px solid var(--gold);color:var(--gold);background:transparent;padding:6px 18px;border-radius:20px;cursor:pointer}
+.lang-btn:hover{background:var(--gold);color:var(--navy)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 5% 60px;gap:20px}
+.hero-content{flex:1;animation:slideUp 1s ease}
+.hero-image{flex:1;display:flex;justify-content:center;animation:fadeIn 1.2s ease}
+.hero-image-wrap{width:480px;height:480px;border-radius:0 0 240px 240px;overflow:hidden;border:2px solid rgba(197,164,109,.3);position:relative}
+.hero-image-wrap img{width:100%;height:100%;object-fit:cover}
+.hero h1{font-size:44px;line-height:1.3;color:var(--gold-light);margin-bottom:15px;font-weight:800}
+.hero p{font-size:18px;color:rgba(255,255,255,.8);margin-bottom:30px;line-height:1.7}
+.gold-btn{background:linear-gradient(135deg,var(--gold),#E8C88A);color:var(--navy);padding:16px 36px;border:none;border-radius:50px;font-weight:800;font-size:18px;text-decoration:none;display:inline-block;box-shadow:0 10px 30px rgba(197,164,109,.3);transition:.3s}
+.gold-btn:hover{transform:translateY(-3px)}
+.badges{margin-top:35px;display:flex;gap:20px;flex-wrap:wrap}
+.badges span{font-size:13px;color:rgba(255,255,255,.6)}
+.badges span::before{content:'• ';color:var(--gold)}
+.section{padding:80px 5%}.section-light{background:var(--navy-light)}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-size:36px;color:var(--gold)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:rgba(255,255,255,.03);border:1px solid rgba(197,164,109,.15);padding:30px;border-radius:20px;transition:.4s}
+.card:hover{transform:translateY(-8px);border-color:var(--gold);background:rgba(197,164,109,.05)}
+.card h3{color:var(--gold-light);margin-bottom:10px}
+.card p{color:rgba(255,255,255,.6);font-size:14px;line-height:1.7}
+.footer{padding:30px;text-align:center;border-top:1px solid rgba(197,164,109,.15);color:rgba(255,255,255,.4);font-size:13px}
+@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+@media(max-width:900px){.hero{flex-direction:column;text-align:center}.hero-image-wrap{width:320px;height:320px}.grid-3{grid-template-columns:1fr}.nav-links{display:none}}
+</style>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Luna Beauty Studio"><span class="brand-mark">LB</span><span>Luna Beauty Studio</span></a>
-    <nav class="main-nav" id="mobile-menu" aria-label="التنقل الرئيسي">
-      <button class="close-menu" id="close-menu" type="button" aria-label="إغلاق القائمة">✕</button>
-      <a href="#top">الرئيسية</a><a href="#work">أعمالي</a><a href="#about">عنّي</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a>
-    </nav>
-    <div class="header-actions">
-      <div class="header-social" aria-label="روابط السوشيال ميديا">
-        <a href="https://instagram.com/lunabeauty" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" class="fill"/></svg></a>
-        <a href="https://tiktok.com/@lunabeauty" target="_blank" rel="noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v10.2a4.3 4.3 0 1 1-3.2-4.16v3.1a1.6 1.6 0 1 0 1.2 1.55V4h2z"/><path d="M14 4c.6 2.1 1.8 3.3 4 3.5"/></svg></a>
-        <a href="https://facebook.com/lunabeauty" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.5 1.6-1.5h1.7V4a21 21 0 0 0-2.4-.1c-2.4 0-4 1.5-4 4.1V10H8.2v3h2.7v8"/></svg></a>
-      </div>
-      <button class="menu-toggle" id="hamburger" type="button" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
-    </div>
-  </header>
+<nav class="navbar">
+<div class="logo">⚖️ <span data-ar="مكتب العدوي" data-en="El-Adawy Office">مكتب العدوي</span></div>
+<ul class="nav-links">
+<li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+<li><a href="#services" data-ar="تخصصاتنا" data-en="Services">تخصصاتنا</a></li>
+<li><a href="#why" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a></li>
+<li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
+</ul>
+<button class="lang-btn" id="langBtn">EN</button>
+</nav>
 
-  <main>
-    <section class="hero section" data-aos="fade-up">
-      <div class="hero-copy"><p class="eyebrow">MAKEUP ARTISTRY / CAIRO</p><h1>جمالك، <span>بنسختك الأجمل</span></h1><p class="lead">إطلالات عروس ومناسبات ناعمة، مصممة حول ملامحك أنتِ — من أول لمسة لآخر صورة.</p><div class="hero-actions"><a class="button button-primary" href="#work">شاهدي أعمالي <b>↗</b></a><a class="button button-quiet" href="#contact">احجزي موعدك <b>↗</b></a></div></div>
-      <div class="hero-image-wrap"><img class="hero-image" data-aos="fade-up" data-aos-delay="150" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1400&q=88" alt="عروس بإطلالة ميكب ناعمة" fetchpriority="high" /><div class="image-caption">01 / 04 <span>BRIDAL GLOW</span></div></div>
-    </section>
+<section class="hero" id="home">
+<div class="hero-content">
+<h1 data-ar="مكتب ياسر العدوي للمحاماة والاستشارات القانونية" data-en="Yasser El-Adawy Law Firm & Legal Consultations">مكتب ياسر العدوي للمحاماة والاستشارات القانونية</h1>
+<p data-ar="نحمي حقوقك بخبرة 15 عاماً في ساحات القضاء المصري - استشارة أولى مجانية وسرية تامة" data-en="We protect your rights with 15 years in Egyptian courts - First consultation free & confidential">نحمي حقوقك بخبرة 15 عاماً في ساحات القضاء المصري - استشارة أولى مجانية وسرية تامة</p>
+<a class="gold-btn" href="https://wa.me/201000000000" data-ar="احجز استشارتك الآن" data-en="Book Your Consultation">احجز استشارتك الآن</a>
+<div class="badges">
+<span data-ar="1000+ قضية ناجحة" data-en="1000+ Cases">1000+ قضية ناجحة</span>
+<span data-ar="دفاع وحماية قانونية" data-en="Legal Protection">دفاع وحماية قانونية</span>
+<span data-ar="استشارات متخصصة" data-en="Specialized Consultations">استشارات متخصصة</span>
+</div>
+</div>
+<div class="hero-image"><div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800" alt="ياسر العدوي"></div></div>
+</section>
 
-    <section class="statement section" data-aos="fade-up"><span class="number">01</span><p>اللوك الصح مش بيخفيكِ — هو بيخلّي <strong>أفضل نسخة منكِ</strong> تظهر.</p></section>
+<section class="section section-light" id="services">
+<div class="section-title"><h2 data-ar="تخصصاتنا القانونية" data-en="Our Specializations">تخصصاتنا القانونية</h2></div>
+<div class="grid-3">
+<div class="card"><h3 data-ar="القضايا الجنائية" data-en="Criminal">القضايا الجنائية</h3><p data-ar="دفاع قوي أمام محاكم الجنايات والجنح" data-en="Strong defense before criminal courts">دفاع قوي أمام محاكم الجنايات والجنح</p></div>
+<div class="card"><h3 data-ar="المدني والتعويضات" data-en="Civil">المدني والتعويضات</h3><p data-ar="منازعات عقارية وتنفيذ أحكام وتعويضات" data-en="Real estate & compensation disputes">منازعات عقارية وتنفيذ أحكام وتعويضات</p></div>
+<div class="card"><h3 data-ar="الأحوال الشخصية" data-en="Family">الأحوال الشخصية</h3><p data-ar="أسرة وخلع ونفقة وميراث بسرية" data-en="Family, divorce & inheritance confidential">أسرة وخلع ونفقة وميراث بسرية</p></div>
+<div class="card"><h3 data-ar="تأسيس الشركات" data-en="Corporate">تأسيس الشركات</h3><p data-ar="سجل تجاري وعقود استثمار وحوكمة" data-en="Company formation & investment contracts">سجل تجاري وعقود استثمار وحوكمة</p></div>
+<div class="card"><h3 data-ar="مجلس الدولة" data-en="Administrative">مجلس الدولة</h3><p data-ar="طعون إدارية وإلغاء قرارات حكومية" data-en="Administrative appeals & cancellations">طعون إدارية وإلغاء قرارات حكومية</p></div>
+<div class="card"><h3 data-ar="التحكيم" data-en="Arbitration">التحكيم</h3><p data-ar="حلول ودية سريعة للمنازعات التجارية" data-en="Fast amicable solutions for disputes">حلول ودية سريعة للمنازعات التجارية</p></div>
+</div>
+</section>
 
-    <section class="section" id="work" data-aos="fade-up"><div class="section-head"><div><p class="eyebrow">SELECTED WORK</p><h2>إطلالات <span>تُحكى</span></h2></div><p>وجوه حقيقية، بشرة مضيئة، وتفاصيل مصممة لتشعري بالثقة في الصور والواقع.</p></div><div class="gallery" id="gallery"></div></section>
+<section class="section" id="why">
+<div class="section-title"><h2 data-ar="لماذا مكتب العدوي؟" data-en="Why El-Adawy?">لماذا مكتب العدوي؟</h2></div>
+<div class="grid-3">
+<div class="card"><h3 data-ar="السرية التامة" data-en="Confidentiality">السرية التامة</h3><p data-ar="ميثاق شرف المهنة - بياناتك في أمان" data-en="Professional ethics - your data is safe">ميثاق شرف المهنة - بياناتك في أمان</p></div>
+<div class="card"><h3 data-ar="متابعة لحظية" data-en="Live Follow-up">متابعة لحظية</h3><p data-ar="تقرير أسبوعي على الواتساب بموقف قضيتك" data-en="Weekly WhatsApp report on your case">تقرير أسبوعي على الواتساب بموقف قضيتك</p></div>
+<div class="card"><h3 data-ar="خبرة 15 سنة" data-en="15 Years Experience">خبرة 15 سنة</h3><p data-ar="مقيد استئناف عالي ومجلس دولة" data-en="High Appeal & State Council registered">مقيد استئناف عالي ومجلس دولة</p></div>
+</div>
+</section>
 
-    <section class="about section" id="about" data-aos="fade-up"><div class="about-image"><img data-aos="fade-up" src="https://images.unsplash.com/photo-1630084775816-7abb7383ded5?auto=format&fit=crop&w=1200&q=88" alt="إطلالة ميكب عروس" /><span>ABOUT / 02</span></div><div class="about-copy"><p class="eyebrow">ABOUT THE STUDIO</p><h2>تفاصيل صغيرة،<br /><span>فرق كبير.</span></h2><p>أنا لونا، ميكب أرتيست شغوفة بإبراز ملامحك الطبيعية بطريقة أنيقة ومريحة. أحب البشرة المضيئة، العيون المحددة بنعومة، واللوك الذي يظل جميلًا في الصور والواقع.</p><div class="stats"><div><b>08+</b><small>سنوات خبرة</small></div><div><b>320+</b><small>إطلالة مكتملة</small></div><div><b>100%</b><small>حب للتفاصيل</small></div></div></div></section>
+<div class="footer">© 2026 مكتب ياسر العدوي - مقيد بنقابة المحامين المصرية</div>
 
-    <section class="section transformation" data-aos="fade-up"><div class="section-head"><div><p class="eyebrow">THE TRANSFORMATION</p><h2>قبل <span>وبعد</span></h2></div><p>اسحبي الخط وشوفي الفرق — سلايدر draggable حقيقي على الديسكتوب والموبايل.</p></div><div class="comparison" id="comparison"><div class="comparison-before"><img src="https://images.unsplash.com/photo-1630084775816-7abb7383ded5?auto=format&fit=crop&w=1200&q=88" alt="قبل الميكب" /><span>BEFORE</span></div><div class="comparison-after"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1400&q=88" alt="بعد الميكب" /><span>AFTER</span></div><div class="comparison-handle" aria-hidden="true"><i></i><i></i><i></i></div><input type="range" min="0" max="100" value="50" aria-label="اسحبي للمقارنة بين قبل وبعد" /></div></section>
-
-    <section class="section" id="services" data-aos="fade-up"><div class="section-head"><div><p class="eyebrow">SERVICES</p><h2>لكل مناسبة، <span>إطلالتها</span></h2></div></div><div class="service-grid"><article><small>01</small><h3>Bridal Beauty</h3><p>تجربة عروس متكاملة من البروڤة إلى يومك الكبير.</p><a href="#contact">احجزي ↗</a></article><article><small>02</small><h3>Soft Glam</h3><p>بشرة مضيئة وتفاصيل ناعمة لمناسبتك الخاصة.</p><a href="#contact">احجزي ↗</a></article><article><small>03</small><h3>Editorial</h3><p>إطلالات إبداعية للجلسات التصويرية والمحتوى.</p><a href="#contact">احجزي ↗</a></article></div></section>
-
-    <section class="section social-feed" id="social" data-aos="fade-up"><div class="section-head"><div><p class="eyebrow">INSTAGRAM / @LUNABEAUTY</p><h2>Behind the <span>glow</span></h2></div><a class="button button-primary" href="https://instagram.com/lunabeauty" target="_blank" rel="noreferrer">Follow on Instagram ↗</a></div><div class="insta-grid" id="instagram"></div></section>
-
-    <section class="section testimonials" data-aos="fade-up"><div class="section-head"><div><p class="eyebrow">CLIENT LOVE</p><h2>كلام <span>من القلب</span></h2></div></div><div class="testimonial-grid"><article><p>“حسيت بنفسي، بس أحلى. الميكب فضل ثابت وناعم طول اليوم.”</p><b>سارة — عروس</b></article><article><p>“لونا فهمت بالضبط اللوك اللي كنت متخيلاه. النتيجة كانت أرقى مما توقعت.”</p><b>نور — Soft Glam</b></article><article><p>“أجمل تجربة ميكب وأهدى فنانة تعاملت معاها. أكيد مش آخر مرة.”</p><b>مريم — جلسة تصوير</b></article></div></section>
-
-    <section class="section contact" id="contact" data-aos="fade-up"><div class="contact-copy"><p class="eyebrow">READY FOR YOUR NEXT LOOK?</p><h2>خلينا نخلق <span>شيء جميل</span></h2><p>ابعتيلي تفاصيل مناسبتك، وسأرجع لكِ بكل التفاصيل المتاحة للحجز.</p><div class="contact-links"><a href="https://wa.me/201000000000" target="_blank" rel="noreferrer">واتساب ↗</a><a href="mailto:hello@lunabeauty.studio">hello@lunabeauty.studio ↗</a><span>القاهرة، مصر</span></div></div><form class="contact-form" id="booking-form"><label>الاسم<input name="name" required placeholder="اسمك" /></label><label>رقم الواتساب<input name="phone" type="tel" required placeholder="01xxxxxxxxx" /></label><label>نوع الخدمة<select name="service" required><option value="">اختاري الخدمة</option><option>Bridal Beauty — عروس</option><option>Soft Glam — مناسبة</option><option>Editorial — تصوير</option></select></label><label>المناسبة وتاريخها<input name="date" required placeholder="مثال: فرح — 20 أكتوبر" /></label><button class="button button-primary" type="submit">إرسال طلب الحجز عبر واتساب ↗</button><small>سيتم فتح واتساب برسالة مجهزة بالتفاصيل.</small><p class="form-status" role="status"></p></form></section>
-  </main>
-
-  <footer class="footer"><div class="footer-inner"><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">LB</span><span>Luna Beauty Studio</span></a><p>Soft looks. Real confidence.</p></div><div class="footer-follow"><p class="eyebrow">تابعيني</p><div class="footer-social" aria-label="روابط السوشيال ميديا"><a href="https://instagram.com/lunabeauty" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.28-.072-1.689-.072-4.948 0-3.259.014-3.668.072-4.948.2-4.358 2.618-6.78 6.98-6.98C8.333 2.177 8.741 2.163 12 2.163zm0 3.675a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.16a3.998 3.998 0 1 1 0-7.996 3.998 3.998 0 0 1 0 7.996zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a><a href="https://facebook.com/lunabeauty" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="white"><path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.5 1.6-1.5h1.7V4a21 21 0 0 0-2.4-.1c-2.4 0-4 1.5-4 4.1V10H8.2v3h2.7v8"/></svg></a><a href="https://tiktok.com/@lunabeauty" target="_blank" rel="noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="white"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://snapchat.com/add/lunabeauty" target="_blank" rel="noreferrer" aria-label="Snapchat"><svg viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.12l-6.893 4.326-2.967-.945c-.64-.2-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.12.832.941z"/></svg></a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> Luna Beauty Studio</span><span>Made with care in Cairo</span></div></footer>
-  <a class="float-wa" href="https://wa.me/201000000000?text=مرحبا%20اريد%20حجز%20ميكب%20عروسة" target="_blank" rel="noreferrer" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 24 24"><path d="M19.1 4.9A9.9 9.9 0 0 0 12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 19.1 4.9ZM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.7-.8-2.8-1.5-3.8-3.5-.2-.3 0-.4.1-.6l.4-.4c.1-.1.1-.3.2-.5 0-.1 0-.3-.1-.4l-.8-1.9c-.1-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.7 1.7-1.4.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.5-.3Z"/></svg></a>
-  <script src="./config.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="./script.js"></script>
+<script>
+let isAr=true;
+document.getElementById('langBtn').addEventListener('click',function(){
+isAr=!isAr;this.textContent=isAr?'EN':'AR';
+document.documentElement.dir=isAr?'rtl':'ltr';document.documentElement.lang=isAr?'ar':'en';
+document.querySelectorAll('[data-ar]').forEach(el=>el.textContent=isAr?el.getAttribute('data-ar'):el.getAttribute('data-en'));
+});
+</script>
 </body>
 </html>
