@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=800" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800" fetchpriority="high">
 <meta property="og:locale" content="ar_EG">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:type" content="website">
@@ -23,13 +23,13 @@
 <meta property="og:title" content="مكتب ياسر العدوي | محاماة واستشارات قانونية">
 <meta property="og:description" content="خبرة 15 عامًا في ساحات القضاء المصري. استشارة أولى مجانية وسرية تامة.">
 <meta property="og:url" content="https://kram2556-dot.github.io/luna-master/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200&auto=format&fit=crop">
 <meta property="og:image:alt" content="مكتب ياسر العدوي للمحاماة والاستشارات القانونية">
 <meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="مكتب ياسر العدوي | محاماة واستشارات قانونية">
 <meta name="twitter:description" content="دفاع وحماية قانونية واستشارات متخصصة في مصر بسرية تامة.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=1200&auto=format&fit=crop">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200&auto=format&fit=crop">
 <meta name="twitter:image:alt" content="مكتب ياسر العدوي للمحاماة والاستشارات القانونية">
 <title>مكتب ياسر العدوي للمحاماة</title>
 <script type="application/ld+json">
@@ -40,7 +40,7 @@
   "name":"مكتب ياسر العدوي للمحاماة والاستشارات القانونية",
   "alternateName":"Yasser El-Adawy Law Firm & Legal Consultations",
   "url":"https://kram2556-dot.github.io/luna-master/",
-  "image":"https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=1200&auto=format&fit=crop",
+  "image":"https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200&auto=format&fit=crop",
   "description":"مكتب ياسر العدوي للمحاماة والاستشارات القانونية في مصر، متخصص في القضايا الجنائية والمدنية والأحوال الشخصية وتأسيس الشركات ومجلس الدولة والتحكيم.",
   "telephone":"+201000000000",
   "areaServed":{"@type":"Country","name":"Egypt"},
@@ -90,7 +90,7 @@ body{background:var(--navy);color:var(--white);overflow-x:hidden}
 @keyframes slideUp{from{opacity:0;transform:translateY(45px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-@media(max-width:900px){.hero{flex-direction:column-reverse;text-align:center}.hero-image-wrap{width:330px;height:380px}.grid-3{grid-template-columns:1fr}.socials{display:none}.hero h1{font-size:34px}}
+@media(max-width:900px){.navbar{padding-left:3%;padding-right:3%}.hero{flex-direction:column-reverse;text-align:center}.hero-image-wrap{width:330px;height:380px}.grid-3{grid-template-columns:1fr}.socials{display:flex;gap:7px}.socials a{font-size:13px}.hero h1{font-size:34px}}
 .footer{padding:25px;text-align:center;border-top:1px solid rgba(197,164,109,.15);color:rgba(255,255,255,.4);font-size:12px}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
@@ -98,11 +98,14 @@ body{background:var(--navy);color:var(--white);overflow-x:hidden}
 <nav class="navbar">
 <div class="logo">⚖️ <span data-ar="مكتب العدوي" data-en="El-Adawy Law">مكتب العدوي</span></div>
 <div class="nav-right">
-<div class="socials">
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-<a href="tel:01000000000"><i class="fas fa-phone"></i></a>
+<div class="socials" aria-label="روابط التواصل الاجتماعي">
+<a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/201000000000" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+<a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" aria-label="X" title="X"><i class="fab fa-x-twitter"></i></a>
+<a href="#" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="tel:01000000000" aria-label="اتصال هاتفي" title="اتصال هاتفي"><i class="fas fa-phone"></i></a>
 </div>
 <button class="lang-btn" id="langBtn">EN</button>
 </div>
@@ -121,7 +124,7 @@ body{background:var(--navy);color:var(--white);overflow-x:hidden}
 </div>
 <div class="hero-image">
 <div class="hero-image-wrap">
-<img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=800&auto=format&fit=crop" alt="lawyer">
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="محامٍ محترف يرتدي بدلة رسمية">
 </div>
 </div>
 </section>
