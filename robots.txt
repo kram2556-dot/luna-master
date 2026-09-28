@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luna-makeup-artist.pages.dev/sitemap.xml
+Sitemap: https://kram2556-dot.github.io/luna-master/sitemap.xml

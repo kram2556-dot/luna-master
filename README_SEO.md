@@ -1,21 +1,19 @@
-# SEO checklist
+# SEO — مكتب ياسر العدوي للمحاماة والاستشارات القانونية
 
-## Implemented
+## تم التنفيذ
 
-- Arabic document language and RTL direction.
-- SEO title and meta description targeting bridal, event, and editorial makeup in Cairo.
-- `keywords`, `author`, `robots`, and theme-color metadata.
-- Canonical URL configured for the expected Cloudflare Pages project URL.
-- Open Graph and Twitter Card metadata with the hero image.
-- JSON-LD `BeautySalon` schema with contact details and social profiles.
-- `robots.txt` allowing crawling and pointing to the current sitemap.
-- Clean `sitemap.xml` with the canonical homepage only. Hash-based sections are intentionally excluded because they are not separate indexable URLs.
-- Descriptive alt text on the major visual assets.
+- عنوان ووصف Meta احترافيان بالعربية يستهدفان المحاماة والاستشارات القانونية في مصر.
+- `keywords`, `author`, `robots`, `googlebot`, و`theme-color` محدثة للهوية القانونية.
+- Canonical و`hreflang` يشيران إلى رابط GitHub Pages النهائي.
+- Open Graph وTwitter Card مع صورة مشاركة ووصف عربي/إنجليزي.
+- JSON-LD من نوع `LegalService` يتضمن الاسم، الرابط، الهاتف، نطاق الخدمة، اللغات، والتخصصات القانونية.
+- `robots.txt` يشير إلى sitemap على GitHub Pages.
+- `sitemap.xml` يحتوي الصفحة العامة الأساسية مع `lastmod` وتردد التحديث.
+- لغة المستند العربية واتجاه RTL، مع زر EN/AR للمحتوى المعروض.
 
-## Before production launch
+## قبل إضافة دومين مخصص
 
-1. Replace `https://luna-beauty-studio-portfolio.pages.dev/` in `index.html`, `robots.txt`, and `sitemap.xml` with the final custom domain.
-2. Replace the placeholder WhatsApp number, email, and social handles with the real business details.
-3. Add the final branded social-share image if available; the current Open Graph image is the supplied Unsplash hero.
-4. Verify the live sitemap in Google Search Console and request indexing after the final domain is connected.
-5. Run Lighthouse/PageSpeed after deployment and convert remote images to optimized local WebP/AVIF files if performance needs improvement.
+1. استبدل الرابط `https://kram2556-dot.github.io/luna-master/` في `index.html` و`robots.txt` و`sitemap.xml` بالدومين المخصص.
+2. أضف بيانات Google Search Console بعد امتلاك الدومين النهائي.
+3. راجع بيانات الهاتف والصورة والادعاءات المهنية قبل الحملات الإعلانية.
+4. أرسل sitemap الجديد إلى Google Search Console بعد الربط.
