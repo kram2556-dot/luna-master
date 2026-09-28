@@ -106,6 +106,15 @@ body{background:var(--navy);color:var(--white);overflow-x:hidden}
 
 .hero{margin-bottom:40px}.hero-title-main,.hero-title-sub{display:block}.hero-title-main{font-size:48px;color:var(--gold-light)}.hero-title-sub{font-size:26px;color:var(--gold);margin-top:5px}.about-media img{border-radius:0 0 230px 230px}.whats-float{bottom:90px;left:20px}.service-icon i{display:inline-block;animation:fadeIn .7s ease both;transition:.3s}.card:hover .service-icon i{transform:translateY(-8px)}.card:hover{transform:translateY(-8px)}
 @media(max-width:900px){.hero-title-main{font-size:34px}.hero-title-sub{font-size:20px}.hero{margin-bottom:40px}}
+
+@media(max-width:900px){
+.hero{min-height:auto;padding:24px 16px 40px;gap:24px;flex-direction:column-reverse;text-align:center;margin-bottom:40px;align-items:stretch}
+.hero-content,.hero-image{flex:none;width:100%}
+.hero-image{justify-content:center}
+.hero-image-wrap{width:min(330px,100%);height:380px;margin:0 auto}
+.hero-title-main{font-size:34px}
+.hero-title-sub{font-size:20px}
+}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
 <body>
